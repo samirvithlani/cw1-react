@@ -2,9 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Header';
 import Footer from './components/Footer';
+import { Users } from './components/users/Users';
 
 function App() {
 
+  var title ="ROYAL TECHNOSOFT"
+  
   // var age =20
   // var name = 'John'
   // var per = 0.5
@@ -72,10 +75,13 @@ function App() {
     // }
 
     // </div>
-    <div className='App' style={{background:"#BAF9C8",height:"700px"}}>
-      <Header/>
-      <h1>APP COMPONENT</h1>
-      <Footer/>
+    // <div className='App' style={{background:"#BAF9C8",height:"700px"}}>
+    //   <Header/>
+    //   <h1>APP COMPONENT</h1>
+    //   <Footer/>
+    // </div>
+    <div>
+      <Users t = {title}/>
     </div>
   );
 }

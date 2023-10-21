@@ -3,6 +3,8 @@ import './App.css';
 import { Header } from './components/Header';
 import Footer from './components/Footer';
 import { Users } from './components/users/Users';
+import { EmployeeForm } from './components/EmployeeForm';
+import { UseStateDemo } from './components/UseStateDemo';
 
 function App() {
 
@@ -80,8 +82,10 @@ function App() {
     //   <h1>APP COMPONENT</h1>
     //   <Footer/>
     // </div>
-    <div>
-      <Users t = {title}/>
+    <div className='App'>
+      {/* <Users t = {title}/> */}
+      <EmployeeForm/>
+      {/* <UseStateDemo/> */}
     </div>
   );
 }

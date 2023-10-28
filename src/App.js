@@ -6,6 +6,8 @@ import { Users } from './components/users/Users';
 import { EmployeeForm } from './components/EmployeeForm';
 import { UseStateDemo } from './components/UseStateDemo';
 import { StudentReg } from './components/users/StudentReg';
+import { UserReg } from './components/UserReg';
+import { ExamForm } from './components/ExamForm';
 
 function App() {
 
@@ -86,7 +88,9 @@ function App() {
     <div className='App'>
       {/* <Users t = {title}/> */}
       {/* <EmployeeForm/> */}
-      <StudentReg/>
+      {/* <StudentReg/> */}
+      {/* <UserReg/> */}
+      <ExamForm/>
       {/* <UseStateDemo/> */}
     </div>
   );

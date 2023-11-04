@@ -8,6 +8,13 @@ import { UseStateDemo } from './components/UseStateDemo';
 import { StudentReg } from './components/users/StudentReg';
 import { UserReg } from './components/UserReg';
 import { ExamForm } from './components/ExamForm';
+import { Navbar } from './components/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './components/Netfix/Home';
+import { Shows } from './components/Netfix/Shows';
+import { Movies } from './components/Netfix/Movies';
+import { Series } from './components/Netfix/Series';
+import { MovieDetail } from './components/Netfix/MovieDetail';
 
 function App() {
 
@@ -90,8 +97,18 @@ function App() {
       {/* <EmployeeForm/> */}
       {/* <StudentReg/> */}
       {/* <UserReg/> */}
-      <ExamForm/>
+      {/* <ExamForm/> */}
       {/* <UseStateDemo/> */}
+      <Navbar/>
+      <Routes>
+          <Route path ="/home" element={<Home/>}></Route>
+          <Route path ="/shows" element ={<Shows/>}></Route>
+          <Route path ="/movies" element ={<Movies/>}></Route>
+          <Route path ="/shows/series" element ={<Series/>}></Route>
+          <Route path = "/movie/detail/:name" element ={<MovieDetail/>}></Route>
+      </Routes>
+      <Footer/>
+      
     </div>
   );
 }

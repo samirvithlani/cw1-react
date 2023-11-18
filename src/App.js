@@ -15,6 +15,8 @@ import { Shows } from './components/Netfix/Shows';
 import { Movies } from './components/Netfix/Movies';
 import { Series } from './components/Netfix/Series';
 import { MovieDetail } from './components/Netfix/MovieDetail';
+import { ApiDemo1 } from './components/api/ApiDemo1';
+import { ApiDemo2 } from './components/api/ApiDemo2';
 
 function App() {
 
@@ -106,7 +108,10 @@ function App() {
           <Route path ="/movies" element ={<Movies/>}></Route>
           <Route path ="/shows/series" element ={<Series/>}></Route>
           <Route path = "/movie/detail/:name" element ={<MovieDetail/>}></Route>
-      </Routes>
+          <Route path= "/apidemo1" element= {<ApiDemo1/>}></Route>
+          <Route path= "/apidemo2" element= {<ApiDemo2/>}></Route>
+          
+      </Routes> 
       <Footer/>
       
     </div>

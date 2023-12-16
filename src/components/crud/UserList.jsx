@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { BounceLoader } from "react-spinners";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -81,6 +82,7 @@ export const UserList = () => {
                 <td>{user.isActive ? "Active" : "Inactive"}</td>
                 <td>
                     <button onClick={()=>deleteUser(user?._id)} className="btn btn-danger">Delete</button>
+                    <Link to ={`/upadteuser/${user?._id}`} className="btn btn-primary">Update</Link>
                 </td>
               </tr>
             );

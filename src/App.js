@@ -19,6 +19,8 @@ import { ApiDemo1 } from './components/api/ApiDemo1';
 import { ApiDemo2 } from './components/api/ApiDemo2';
 import { PostApiDemo } from './components/api/PostApiDemo';
 import { PostApiDemo2 } from './components/api/PostApiDemo2';
+import { AddUser } from './components/crud/AddUser';
+import { UserList } from './components/crud/UserList';
 
 function App() {
 
@@ -114,6 +116,8 @@ function App() {
           <Route path= "/apidemo2" element= {<ApiDemo2/>}></Route>
           <Route path = "/postapidemo" element = {<PostApiDemo/>}></Route>
           <Route path = "/postapidemo2" element = {<PostApiDemo2/>}></Route>
+          <Route path='/adduser' element={<AddUser/>}></Route>
+          <Route path='/userlist' element={<UserList/>}></Route>
           
       </Routes> 
       <Footer/>

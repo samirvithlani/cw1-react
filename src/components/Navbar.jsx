@@ -54,6 +54,16 @@ export const Navbar = () => {
                 POST API DEMO2
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/adduser">
+                ADD USER
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/userlist">
+                USER LISt
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

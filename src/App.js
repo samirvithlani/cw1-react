@@ -22,6 +22,7 @@ import { PostApiDemo2 } from './components/api/PostApiDemo2';
 import { AddUser } from './components/crud/AddUser';
 import { UserList } from './components/crud/UserList';
 import { UpdateUser } from './components/crud/UpdateUser';
+import { PopUpDemo } from './components/crud/PopUpDemo';
 
 function App() {
 
@@ -120,6 +121,7 @@ function App() {
           <Route path='/adduser' element={<AddUser/>}></Route>
           <Route path='/userlist' element={<UserList/>}></Route>
           <Route path='/upadteuser/:id' element={<UpdateUser/>}></Route>
+          <Route path ="/popup" element = {<PopUpDemo/>}></Route>
           
       </Routes> 
       <Footer/>

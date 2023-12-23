@@ -25,6 +25,8 @@ import { UpdateUser } from './components/crud/UpdateUser';
 import { PopUpDemo } from './components/crud/PopUpDemo';
 import { EmployeeList } from './components/crud2/EmployeeList';
 import { AddEmployee } from './components/crud2/AddEmployee';
+import { AddBook } from './components/crud/AddBook';
+import { BookList } from './components/crud/BookList';
 
 function App() {
 
@@ -126,6 +128,8 @@ function App() {
           <Route path ="/popup" element = {<PopUpDemo/>}></Route>
           <Route path='/employeelist' element={<EmployeeList/>}></Route>
           <Route path='/addemp' element={<AddEmployee/>}></Route>
+          <Route path='/addbook' element ={<AddBook/>}></Route>
+          <Route path = "/getbooks" element = {<BookList/>}></Route>
           
       </Routes> 
       <Footer/>

@@ -69,6 +69,11 @@ export const Navbar = () => {
                 POPUP DEMO
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/employeelist">
+                EMployee List
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

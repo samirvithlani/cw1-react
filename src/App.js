@@ -27,6 +27,11 @@ import { EmployeeList } from './components/crud2/EmployeeList';
 import { AddEmployee } from './components/crud2/AddEmployee';
 import { AddBook } from './components/crud/AddBook';
 import { BookList } from './components/crud/BookList';
+import { AddPdf } from './components/crud/AddPdf';
+import ViewPdf from './components/crud/ViewPdf';
+import { LoadPdf } from './components/crud/LoadPdf';
+import { LoginUser } from './components/LoginUser';
+import ProtectedRoutes from './components/hooks/ProtectedRoutes';
 
 function App() {
 
@@ -113,9 +118,12 @@ function App() {
       {/* <UseStateDemo/> */}
       <Navbar/>
       <Routes>
-          <Route path ="/home" element={<Home/>}></Route>
-          <Route path ="/shows" element ={<Shows/>}></Route>
-          <Route path ="/movies" element ={<Movies/>}></Route>
+        <Route path ="/" element={<LoginUser/>}></Route>
+        <Route element = {<ProtectedRoutes/>}>
+            <Route path ="/home" element={<Home/>}></Route>
+            <Route path ="/shows" element ={<Shows/>}></Route>
+            <Route path ="/movies" element ={<Movies/>}></Route>
+          </Route>
           <Route path ="/shows/series" element ={<Series/>}></Route>
           <Route path = "/movie/detail/:name" element ={<MovieDetail/>}></Route>
           <Route path= "/apidemo1" element= {<ApiDemo1/>}></Route>
@@ -130,9 +138,12 @@ function App() {
           <Route path='/addemp' element={<AddEmployee/>}></Route>
           <Route path='/addbook' element ={<AddBook/>}></Route>
           <Route path = "/getbooks" element = {<BookList/>}></Route>
+          <Route path = "/addpdf" element = {<AddPdf/>}></Route>
+          <Route path = "/viewPdf" element = {<ViewPdf/>}></Route>
+          <Route path = "/loadpdf" element = {<LoadPdf/>}></Route>
           
       </Routes> 
-      <Footer/>
+      
       
     </div>
   );

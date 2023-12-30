@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-export const AddBook = () => {
+export const AddPdf = () => {
   const { register, handleSubmit, reset } = useForm();
   const submitHandler = async(data) => {
 

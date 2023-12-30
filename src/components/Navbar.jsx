@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
+  const logout= ()=>{
+    localStorage.removeItem('token');
+    navigate('/');
+  }
   return (
     <div>
       <nav
@@ -88,6 +93,29 @@ export const Navbar = () => {
               <Link className="nav-link" to="/getbooks">
                  book List
               </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/addpdf">
+                 ADD PDF
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/viewpdf">
+                 view pdf
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/loadpdf">
+                 load pdf
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                 LOGIN
+              </Link>
+            </li>
+            <li className="nav-item">
+              <button className="btn btn-danger" onClick={()=>{logout()}}>LOGOUT</button>
             </li>
           </ul>
         </div>

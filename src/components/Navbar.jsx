@@ -65,6 +65,11 @@ export const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/students">
+                Student-context-api
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link className="nav-link" to="/userlist">
                 USER LISt
               </Link>
@@ -108,7 +113,7 @@ export const Navbar = () => {
               <Link className="nav-link" to="/loadpdf">
                  load pdf
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link className="nav-link" to="/">
                  LOGIN

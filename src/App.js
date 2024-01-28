@@ -35,6 +35,7 @@ import ProtectedRoutes from "./components/hooks/ProtectedRoutes";
 import { StudentList } from "./components/students/StudentList";
 import { Students } from "./components/students/Students";
 import { AppContext } from "./context";
+import { PieChartDemo } from "./components/chart/PieChartDemo";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -145,6 +146,7 @@ function App() {
           <Route path="/viewPdf" element={<ViewPdf />}></Route>
           <Route path="/loadpdf" element={<LoadPdf />}></Route>
           <Route path="/students" element={<Students />}></Route>
+          <Route path="/piechart" element={<PieChartDemo />}></Route>
         </Routes>
       </AppContext.Provider>
     </div>

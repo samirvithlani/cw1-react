@@ -69,6 +69,12 @@ export const Navbar = () => {
                 Student-context-api
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/muitable">
+              muitable
+              </Link>
+            </li>
+            
             {/* <li className="nav-item">
               <Link className="nav-link" to="/userlist">
                 USER LISt

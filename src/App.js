@@ -36,6 +36,9 @@ import { StudentList } from "./components/students/StudentList";
 import { Students } from "./components/students/Students";
 import { AppContext } from "./context";
 import { PieChartDemo } from "./components/chart/PieChartDemo";
+import { FetchBooks } from "./components/crud/FetchBooks";
+import { MuiTable } from "./components/mui/MuiTable";
+import { MuiTable2 } from "./components/mui/MuiTable2";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -147,6 +150,9 @@ function App() {
           <Route path="/loadpdf" element={<LoadPdf />}></Route>
           <Route path="/students" element={<Students />}></Route>
           <Route path="/piechart" element={<PieChartDemo />}></Route>
+          <Route path="/fetchbooks" element={<FetchBooks/>}></Route>
+          <Route path="/muitable" element={<MuiTable2 />}></Route>
+
         </Routes>
       </AppContext.Provider>
     </div>

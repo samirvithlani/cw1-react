@@ -10,6 +10,14 @@ export const BookList = () => {
     setbooks(res.data.data);
   };
 
+  const images = books.map((book) => {
+    return (
+      <div>
+        <img src={`https://drive.google.com/uc?export=view&id=/${book.googleDriveId}/&sz=SIZE`} alt="no image" width="100px" />
+      </div>
+    );
+  });
+
   useEffect(() => {
     getBookData();
   }, []);
@@ -38,7 +46,13 @@ export const BookList = () => {
                                 <td>{book.qty}</td>
                                 <td>{book.genere}</td>
                                 <td>{book.ratings}</td>
-                                <td><img src={`https://drive.google.com/uc?export=view&id=${book.googleDriveId}`} alt="no image" width="100px"/></td>
+                                {/* //https://drive.google.com/uc?export=view&id${book.googleDriveId} */}
+                                {/* <td><img src={`https://drive.google.com/file/d/${book.googleDriveId}/view`} alt="no image" width="100px"/></td> */}
+                                {/* https://drive.google.com/file/d/yourFileId/view */}
+                                <td>
+                                    <img src={images} alt="no image" width="100px"/>
+                                </td>
+
                             </tr>
                         )
                     })

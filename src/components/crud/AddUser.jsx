@@ -1,8 +1,11 @@
+import { LoadingButton } from "@mui/lab";
+import { CircularProgress } from "@mui/material";
 import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MyButton } from "../mui/MyButton";
 
 export const AddUser = () => {
   const {
@@ -56,16 +59,16 @@ export const AddUser = () => {
 
     reset();
     setisLoading(false);
-    toast.success('User added successfully!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
+    toast.success("User added successfully!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   return (
@@ -138,7 +141,16 @@ export const AddUser = () => {
             ></input>
           </div>
           <div>
-            <button type="submit">ADD USER</button>
+            {/* <button type="submit">ADD USER</button> */}
+            {/* <MyButton name="ADD USER" type="submit" /> */}
+            <LoadingButton
+              loading={isLoading}
+              loadingIndicator={<CircularProgress />}
+              variant="contained"
+              type="submit"
+            >
+              ADD USER
+            </LoadingButton>
           </div>
         </form>
       </div>

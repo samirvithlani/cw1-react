@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const navigate = useNavigate();
-  const logout= ()=>{
-    localStorage.removeItem('token');
-    navigate('/');
-  }
+  const logout = () => {
+    localStorage.removeItem("token");
+    navigate("/");
+  };
   return (
     <div>
       <nav
@@ -71,10 +71,16 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/muitable">
-              muitable
+                muitable
               </Link>
             </li>
-            
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/muibutton">
+                muibutton
+              </Link>
+            </li>
+
             {/* <li className="nav-item">
               <Link className="nav-link" to="/userlist">
                 USER LISt
@@ -122,11 +128,18 @@ export const Navbar = () => {
             </li> */}
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                 LOGIN
+                LOGIN
               </Link>
             </li>
             <li className="nav-item">
-              <button className="btn btn-danger" onClick={()=>{logout()}}>LOGOUT</button>
+              <button
+                className="btn btn-danger"
+                onClick={() => {
+                  logout();
+                }}
+              >
+                LOGOUT
+              </button>
             </li>
           </ul>
         </div>

@@ -39,6 +39,7 @@ import { PieChartDemo } from "./components/chart/PieChartDemo";
 import { FetchBooks } from "./components/crud/FetchBooks";
 import { MuiTable } from "./components/mui/MuiTable";
 import { MuiTable2 } from "./components/mui/MuiTable2";
+import { ButtonDemo } from "./components/mui/ButtonDemo";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -152,6 +153,7 @@ function App() {
           <Route path="/piechart" element={<PieChartDemo />}></Route>
           <Route path="/fetchbooks" element={<FetchBooks/>}></Route>
           <Route path="/muitable" element={<MuiTable2 />}></Route>
+          <Route path ="/muibutton" element={<ButtonDemo/>}></Route>
 
         </Routes>
       </AppContext.Provider>

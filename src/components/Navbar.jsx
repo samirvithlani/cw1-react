@@ -80,6 +80,11 @@ export const Navbar = () => {
                 muibutton
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/slider">
+                slider
+              </Link>
+            </li>
 
             {/* <li className="nav-item">
               <Link className="nav-link" to="/userlist">

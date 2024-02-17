@@ -40,6 +40,7 @@ import { FetchBooks } from "./components/crud/FetchBooks";
 import { MuiTable } from "./components/mui/MuiTable";
 import { MuiTable2 } from "./components/mui/MuiTable2";
 import { ButtonDemo } from "./components/mui/ButtonDemo";
+import { SLiderDemo1 } from "./components/mui/SLiderDemo1";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -154,6 +155,7 @@ function App() {
           <Route path="/fetchbooks" element={<FetchBooks/>}></Route>
           <Route path="/muitable" element={<MuiTable2 />}></Route>
           <Route path ="/muibutton" element={<ButtonDemo/>}></Route>
+          <Route path = "/slider" element ={<SLiderDemo1/>}></Route>
 
         </Routes>
       </AppContext.Provider>

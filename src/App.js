@@ -41,6 +41,7 @@ import { MuiTable } from "./components/mui/MuiTable";
 import { MuiTable2 } from "./components/mui/MuiTable2";
 import { ButtonDemo } from "./components/mui/ButtonDemo";
 import { SLiderDemo1 } from "./components/mui/SLiderDemo1";
+import { DrawerDemo } from "./components/mui/DrawerDemo";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -124,7 +125,8 @@ function App() {
       {/* <UserReg/> */}
       {/* <ExamForm/> */}
       {/* <UseStateDemo/> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <DrawerDemo/>
       <AppContext.Provider value={{ title }}>
         <Routes>
           <Route path="/" element={<LoginUser />}></Route>

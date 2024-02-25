@@ -42,6 +42,8 @@ import { MuiTable2 } from "./components/mui/MuiTable2";
 import { ButtonDemo } from "./components/mui/ButtonDemo";
 import { SLiderDemo1 } from "./components/mui/SLiderDemo1";
 import { DrawerDemo } from "./components/mui/DrawerDemo";
+import { QrCodeDemo } from "./components/QrCodeDemo";
+import { QrScanner } from "./components/QrScanner";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -158,6 +160,9 @@ function App() {
           <Route path="/muitable" element={<MuiTable2 />}></Route>
           <Route path ="/muibutton" element={<ButtonDemo/>}></Route>
           <Route path = "/slider" element ={<SLiderDemo1/>}></Route>
+          <Route path ="/qrcode" element = {<QrCodeDemo/>}></Route>
+          <Route path ="/qrscanner" element = {<QrScanner/>}></Route>
+          
 
         </Routes>
       </AppContext.Provider>

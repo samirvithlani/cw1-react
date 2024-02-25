@@ -47,12 +47,20 @@ export const DrawerDemo = () => {
       title: "Dashboard",
       linkTo: "/user/dashboard",
     },
+    {
+      title: "qrCode",
+      linkTo: "/qrcode",
+    },
+    {
+      title: "qrScanner",
+      linkTo: "/qrscanner",
+    }
   ];
 
   console.log("drawer", open);
 
   const DrawerList = (
-    <Box sx={{ width: 250 }}  onClick={toggleDrawer(false)}>
+    <Box sx={{ width: 250 }} onClick={toggleDrawer(false)}>
       <List>
         {role === "user"
           ? userLinks?.map((text) => (

@@ -8,8 +8,8 @@ export const QrScanner = () => {
       
         const scanner = new Html5QrcodeScanner('reader',{
             qrbox:{
-                width:100,
-                height:100
+                width:250,
+                height:250
             },
             fps:10
         })
@@ -30,7 +30,7 @@ export const QrScanner = () => {
     <div>
         <h1>QR SCANNER</h1>
         <div id="reader">
-            
+            {result && <h1> Hello {result}</h1>}
         </div>
     </div>
   )

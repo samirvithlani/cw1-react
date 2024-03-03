@@ -12,10 +12,15 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export const DrawerDemo = () => {
   const [open, setOpen] = useState(false);
   const [role, setrole] = useState("user");
+
+  const state = useSelector((state)=>state.cart.items)
+  console.log("state in drawer...",state)
+  console.log("state in drawer...",state.length)
 
   const toggleDrawer = (isOpen) => () => {
     setOpen(isOpen);
@@ -54,6 +59,10 @@ export const DrawerDemo = () => {
     {
       title: "qrScanner",
       linkTo: "/qrscanner",
+    },
+    {
+      title: "products",
+      linkTo: "/product",
     }
   ];
 
@@ -89,7 +98,7 @@ export const DrawerDemo = () => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
+      <Button onClick={toggleDrawer(true)}>Open drawer products in cart{state.length}</Button>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>

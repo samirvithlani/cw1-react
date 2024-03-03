@@ -44,6 +44,7 @@ import { SLiderDemo1 } from "./components/mui/SLiderDemo1";
 import { DrawerDemo } from "./components/mui/DrawerDemo";
 import { QrCodeDemo } from "./components/QrCodeDemo";
 import { QrScanner } from "./components/QrScanner";
+import { Products } from "./components/ecom/Products";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -162,6 +163,7 @@ function App() {
           <Route path = "/slider" element ={<SLiderDemo1/>}></Route>
           <Route path ="/qrcode" element = {<QrCodeDemo/>}></Route>
           <Route path ="/qrscanner" element = {<QrScanner/>}></Route>
+          <Route path ="/product" element = {<Products/>}></Route>
           
 
         </Routes>

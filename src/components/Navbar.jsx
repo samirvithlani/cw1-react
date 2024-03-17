@@ -85,6 +85,11 @@ export const Navbar = () => {
                 slider
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/content">
+                content
+              </Link>
+            </li>
 
             {/* <li className="nav-item">
               <Link className="nav-link" to="/userlist">

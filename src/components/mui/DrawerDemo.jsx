@@ -63,6 +63,10 @@ export const DrawerDemo = () => {
     {
       title: "products",
       linkTo: "/product",
+    },
+    {
+      title: "content",
+      linkTo: "/content",
     }
   ];
 

@@ -46,6 +46,7 @@ import { QrCodeDemo } from "./components/QrCodeDemo";
 import { QrScanner } from "./components/QrScanner";
 import { Products } from "./components/ecom/Products";
 import { ContentComponent } from "./components/ContentComponent";
+import { Dashboard } from "./components/mui/dashboard/Dashboard";
 
 function App() {
   var title = "ROYAL TECHNOSOFT";
@@ -130,10 +131,11 @@ function App() {
       {/* <ExamForm/> */}
       {/* <UseStateDemo/> */}
       {/* <Navbar /> */}
-      <DrawerDemo/>
+      {/* <DrawerDemo/> */}
+      <Dashboard/>
       <AppContext.Provider value={{ title }}>
         <Routes>
-          <Route path="/" element={<LoginUser />}></Route>
+          {/* <Route path="/" element={<LoginUser />}></Route> */}
           <Route element={<ProtectedRoutes />}>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/shows" element={<Shows />}></Route>
